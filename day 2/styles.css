@@ -61,8 +61,8 @@
 }
 
 .middle{
-	margin-left: 500px;
-	margin-top: 500px;
+	margin-left: 550px;
+	margin-top: -320px;
 }
 
 .secondparent{
@@ -70,7 +70,7 @@
 	height: 300px;
 	width: 300px;
 	background-color: grey;
-	margin-left: 500px;
+	margin-left: 550px;
 	border: 2px solid black;
 	margin-bottom: 100px;
 }
@@ -81,5 +81,32 @@
 	width: 100px;
 	background-color: hotpink;
 	border: 2px solid red;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
+.bottomright{
+	margin-left: 1000px;
+	margin-top: -430px;
+}
+
+.thirdparent{
+	position: relative;
+	height: 300px;
+	width: 300px;
+	background-color: grey;
+	margin-left: 1000px;
+	border: 2px solid black;
+	margin-bottom: 100px;
+}
+
+.thirdchild{
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background-color: hotpink;
+	border: 2px solid red;
+	right: 0px;
+	bottom: 0px;
+}
