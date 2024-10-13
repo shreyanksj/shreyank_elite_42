@@ -110,3 +110,27 @@
 	right: 0px;
 	bottom: 0px;
 }
+
+.flex{
+	margin-left: 45%;
+	margin-bottom: 10px;
+}
+
+.box{
+	display: flex;
+	height: 500px;
+	width: 900px;
+	margin-left: 50%;
+	transform: translate(-50%);
+	background-color: yellow;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.label{
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	margin: 20px;
+}
