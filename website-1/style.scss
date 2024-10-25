@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    .header{
+        background-image: url('https://img.freepik.com/free-photo/gold-texture-wallpaper_53876-47133.jpg?t=st=1729401213~exp=1729404813~hmac=6719e9569eb980d3972ab2263da51813f1565bd09d1d5630076f2424a0d1e2d4&w=1060');
+	    height: 200px;
+        .navigation{
+            background-color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            ul{
+                display: flex;
+	            justify-content: flex-end;
+                
+                li{
+                    list-style: none;
+	                display: inline;
+	                margin-right: 10px;
+                    a{
+                        text-decoration: none;
+	                    color: black;
+                        &:hover{
+                        	color: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .products{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            li{
+                list-style: none;
+                .item{
+                    position: relative;
+                    padding: 20px;
+                    width: 300px;
+                    height: 200px;
+                    background-color: grey;
+                    margin: 10px;
+                    text-align: center;
+                    color: white;
+                    &:hover{
+                        background-color: black;
+                    }
+                    p{
+                        padding: 10px;
+                        font-size: 12px;
+                    }
+                    img{
+                        position: absolute;
+                        left: 30%;
+                        top: 35%;
+                        height: 130px;
+                        width: 130px;
+                    }
+                    button{
+                        position: absolute;
+                        width: 100%;
+                        height: 30px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: green;
+                        color: white;
+                        &:hover{
+                            cursor: pointer;
+                            color: black;
+                            background-color: red;
+
+                        }
+                    }
+                }
+            }
+    }
+}
