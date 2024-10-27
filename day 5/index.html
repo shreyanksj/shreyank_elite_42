@@ -13,20 +13,34 @@
     <div class="container">
         <form onsubmit="fnValidateSignUpForm(event)">
         <label for="firstname">First Name: </label>
-        <input type="text" id="firstname" name="firstname" pattern="[A-Z]{3}">
+        <input type="text" id="firstname" name="firstname">
+        <span class="error fname-empty">*this field is empty</span>
+        <span class="error fname-invalid">*this field should contain atleast 5 characters</span>
+
         <br><br>
+
         <label for="lastname">Last Name: </label>
         <input type="text" id="lastname">
+        <span class="error lname-empty">*this field is empty</span>
+        <span class="error lname-invalid">*this field should contain atleast 5 characters</span>
         <br><br>
+
         <label for="email">Email: </label>
         <input type="text" id="email">
         <br><br>
+
         <label for="password">Password: </label>
         <input type="password" id="password">
+        <span class="error password-empty">*this field is empty</span>
+        <span class="error password-invalid">*this field should contain atleast 8 characters</span>
         <br><br>
+
         <label for="confirmpassword">Confirm Password: </label>
         <input type="password" id="confirmpassword">
+        <span class="error confirmpassword-empty">*this field is empty</span>
+        <span class="error confirmpassword-invalid">*this field does not matches with password</span>
         <br><br>
+
         <button class="button"> Submit</button>
         </form>
     </div>
