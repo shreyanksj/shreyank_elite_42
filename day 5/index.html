@@ -11,8 +11,9 @@
 
 <body>
     <div class="container">
+        <form onsubmit="fnValidateSignUpForm(event)">
         <label for="firstname">First Name: </label>
-        <input type="text" id="firstname">
+        <input type="text" id="firstname" name="firstname" pattern="[A-Z]{3}">
         <br><br>
         <label for="lastname">Last Name: </label>
         <input type="text" id="lastname">
@@ -26,7 +27,8 @@
         <label for="confirmpassword">Confirm Password: </label>
         <input type="password" id="confirmpassword">
         <br><br>
-        <button onclick="fnValidate()" class="button"> Submit</button>
+        <button class="button"> Submit</button>
+        </form>
     </div>
 </body>
 
