@@ -31,7 +31,7 @@ function fnValidateSignUpForm(e) {
         document.getElementsByClassName("password-empty")[0].style.display = "block";
     } else if(!(password.length > 7)){
         document.getElementsByClassName("password-empty")[0].style.display = "none";
-        document.getElementsByClassName("password-invalid")[0].style.display = "block"
+        document.getElementsByClassName("password-invalid")[0].style.display = "block";
     }
     
     //confirm password
